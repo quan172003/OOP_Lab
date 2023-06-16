@@ -1,0 +1,25 @@
+package hust.soict.globalict.swing;
+
+import java.awt.ComponentOrientation;
+import java.awt.Container;
+import java.awt.Frame;
+import java.awt.GridLayout;
+
+import javax.swing.*;
+
+public class NumberGrid extends Frame{
+	private JButton[] btnNumbers = new JButton[10];
+	private JButton btnDelete, btnReset;
+	private JTextField tfDisplay;
+	
+	public NumberGrid()
+	{
+		tfDisplay = new JTextField();
+		tfDisplay.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT);
+		JPanel panelButtons = new JPanel(new GridLayout(4, 3));
+		add(panelButtons);
+		
+		Container cp = getContentPane();
+		
+	}
+}
